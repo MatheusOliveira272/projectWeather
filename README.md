@@ -5,13 +5,16 @@ Um aplicativo simples de previsão do tempo desenvolvido em Python com a bibliot
 ---
 
 ## 📸 Capturas de Tela
-
-<img src="https://github.com/MatheusOliveira272/projectWeather/blob/master/readme/images/img1.png" alt="Tela inicial" style="max-width: 100%;">
+<div align="center" dir="auto">
+<img src="https://github.com/MatheusOliveira272/projectWeather/blob/master/readme/images/img6.png" alt="Tela inicial" style="max-width: 100%;">
 <img src="https://github.com/MatheusOliveira272/projectWeather/blob/master/readme/images/img2.png" alt="Tela inicial" style="max-width: 100%;">
 <img src="https://github.com/MatheusOliveira272/projectWeather/blob/master/readme/images/img3.png" alt="Tela inicial" style="max-width: 100%;">
 <img src="https://github.com/MatheusOliveira272/projectWeather/blob/master/readme/images/img4.png" alt="Tela inicial" style="max-width: 100%;">
 <img src="https://github.com/MatheusOliveira272/projectWeather/blob/master/readme/images/img5.png" alt="Tela inicial" style="max-width: 100%;">
-<img src="https://github.com/MatheusOliveira272/projectWeather/blob/master/readme/images/img6.png" alt="Tela inicial" style="max-width: 100%;">
+<img src="https://github.com/MatheusOliveira272/projectWeather/blob/master/readme/images/img1.png" alt="Tela inicial" style="max-width: 100%;">
+   
+ </div>
+
 
 ---
 
