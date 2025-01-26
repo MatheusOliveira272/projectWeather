@@ -7,7 +7,7 @@ ctk.set_appearance_mode('dark')
 app = ctk.CTk()
 app.title('Sistema de Clima')
 app.geometry('400x300')
-app.resizable(False, False)
+
 
 campo_local = ctk.CTkEntry(app, placeholder_text="Digite uma cidade", width=200, height=30, font=("Arial", 13))
 campo_local.grid(row=1, column=0, columnspan=1, pady=5, padx=5)
