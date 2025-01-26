@@ -19,7 +19,6 @@ def buscar_clima():
         if dados_clima:  # Verifica se os dados não são None
             atualizar_interface(dados_clima)  # Passa os dados para a interface
         else:
-            alert(app, f"Erro ao obter os dados da cidade!").mainloop()
             print("Erro ao obter os dados da cidade.")  
     else:
         alert(app, f"Insira o nome de uma cidade!").mainloop()  
