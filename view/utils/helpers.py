@@ -18,15 +18,6 @@ def carregar_imagem(caminho, tamanho=(100, 100)):
         return None
 
 
-'''def country_to_continent(country_code):
-    try:
-        country_name = pc.country_alpha2_to_country_name(country_code)
-        continent_code = pc.country_alpha2_to_continent_code(country_code)
-        return pc.convert_continent_code_to_continent_name(continent_code)
-    except KeyError:
-        return "Desconhecido"
-'''
-
 def celsius_to_fahrenheit(celsius):
     return (celsius * 9/5) + 32
 
@@ -38,17 +29,19 @@ class alert(ctk.CTkToplevel):
         super().__init__(*args, **kwargs)
         self.title("Aviso")
         self.geometry("350x150")
-        self.resizable(False, False)
-        
+        self.resizable(False, False)      
         self.transient(parent)  # Mantém a relação com a janela principal
-
-       # Define a janela sempre no topo
-        self.attributes("-topmost", True)
+        self.attributes("-topmost", True) # Define a janela sempre no topo
+        self.grab_set() # Impede interação com a janela principal enquanto esta está aberta
        
-
-        # Impede interação com a janela principal enquanto esta está aberta
-        self.grab_set()
-
+       # Obtém coordenadas da tela principal para centralizar
+        self.update_idletasks()
+        largura_janela = 350
+        altura_janela = 150
+        x_offset = parent.winfo_x() + (parent.winfo_width() // 2) - (largura_janela // 2)
+        y_offset = parent.winfo_y() + (parent.winfo_height() // 2) - (altura_janela // 2)
+        self.geometry(f"{largura_janela}x{altura_janela}+{x_offset}+{y_offset}")
+        
         # Adicionando o conteúdo da janela de alerta
         self.label = ctk.CTkLabel(self, text=mensagem, font=("Arial", 12, "bold"))
         self.label.pack(pady=20, padx=20)
